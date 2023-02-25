@@ -7,7 +7,7 @@ phases:
       - echo Entered the install phase...
       - echo Build started on `date`
       - pip3 install -r requirements.txt
-      - python3 -m playwright install
+      - python3 -m playwright install --with-deps
   build:
     commands:
       - echo Entered the build phase...
